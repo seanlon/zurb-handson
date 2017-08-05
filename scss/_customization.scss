@@ -57,14 +57,17 @@ input::-webkit-input-placeholder {
       .header{
         background-color:$global-blue-color-1;
         color:$white; 
-        padding: $common-padding;
+        padding-top: $common-padding;
+        padding-bottom: $common-padding;
         border-radius:$common-popup-radius;
+         border-bottom-left-radius: 0px;
+         border-bottom-right-radius: 0px;
         border-top:1px $global-blue-color-1 solid;
 
       }
       .thumbnail-wrapper{
 
-          padding-top:35px; 
+          padding-top: inherit; 
           .thumbnail-icon{
               text-align:center;
               font-size: 35px; 
@@ -77,6 +80,9 @@ input::-webkit-input-placeholder {
         background-color:$global-grey-color-1;
         color:$global-grey-color-2;; 
         padding: $common-padding;
+
+        padding-top: $common-padding;
+        padding-bottom: $common-padding;
         border-top:0px transparent solid;  
          border-bottom-left-radius: $common-popup-radius;
          border-bottom-right-radius: $common-popup-radius;
