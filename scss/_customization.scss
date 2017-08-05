@@ -35,4 +35,59 @@ input::-webkit-input-placeholder {
 .image-canvas-thumbnail {
   height: 125px;
   width: 100%;
+  border: $black 1px solid; 
+  border-radius: 0px;
+}
+
+.popup-screen{ 
+    background: transparent;
+    padding: 30px; 
+    $common-popup-radius : 8px;
+    $common-padding:12px;
+    border:0px transparent solid ;
+   .main{
+      ///*border:1px $white solid;*/
+      .button-close{
+        color:$white;
+        font-size:13px;
+      }
+      .title-text{
+        font-weight:600;
+      }
+      .header{
+        background-color:$global-blue-color-1;
+        color:$white; 
+        padding: $common-padding;
+        border-radius:$common-popup-radius;
+        border-top:1px $global-blue-color-1 solid;
+
+      }
+      .thumbnail-wrapper{
+
+          padding-top:35px; 
+          .thumbnail-icon{
+              text-align:center;
+              font-size: 35px; 
+              border: 0px solid transparent;
+              box-shadow: none; 
+          }
+      }
+
+      .body{ 
+        background-color:$global-grey-color-1;
+        color:$global-grey-color-2;; 
+        padding: $common-padding;
+        border-top:0px transparent solid;  
+         border-bottom-left-radius: $common-popup-radius;
+         border-bottom-right-radius: $common-popup-radius;
+         border-bottom:1px $global-grey-color-1 solid;
+
+         .big-option{ 
+          border: solid $global-blue-color-1 2px;
+          background-color: white;
+           border-radius:$common-popup-radius;
+           padding:$common-padding;
+         }
+      }
+   } 
 }

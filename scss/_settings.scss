@@ -68,7 +68,7 @@
 $global-grey-color-1:  #f5f5f5;
 $global-grey-color-2:  #878787; 
 $global-green-color-2: #a5cc49; 
-
+$global-blue-color-1:#1ba5fa;
 
 
  
@@ -81,8 +81,7 @@ $foundation-palette: (
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
-);
-
+); 
 
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
@@ -117,7 +116,7 @@ $body-font-color: $global-grey-color-2;
 
  
 $foundation-palette: (
-  primary: #1779ba,
+  primary: #1ba5fa,
   secondary: $white, 
   success:  $global-green-color-2,
   warning: #ffae00,
@@ -889,3 +888,33 @@ $grid-margin-gutters: (
 $grid-padding-gutters: $grid-margin-gutters;
 $block-grid-max: 8;
 
+////import font icon
+
+$fontFileName: "./fonts/general_foundicons";
+$fontName: "GeneralFoundicons";
+$classPrefix: "foundicon-";
+
+@mixin i-class($name,$pua) {
+  .#{$classPrefix}#{$name}:before { 
+    content: "\f#{$pua}";
+  }
+}
+
+@mixin ie-class($name,$pua) {
+  .#{$classPrefix}#{$name} { 
+    *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf#{$pua};"); 
+  }
+}
+
+@mixin face {
+  @font-face { 
+    font-family: $fontName;
+    src: url('#{$fontFileName}.eot');
+    src: url('#{$fontFileName}.eot?#iefix') format('embedded-opentype'),
+         url('#{$fontFileName}.woff') format('woff'),
+         url('#{$fontFileName}.ttf') format('truetype'),
+         url('#{$fontFileName}.svg##{$fontName}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
