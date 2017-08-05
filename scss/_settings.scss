@@ -67,6 +67,9 @@
 //custom
 $global-grey-color-1:  #f5f5f5;
 $global-grey-color-2:  #878787; 
+$global-green-color-2: #a5cc49; 
+
+
 
  
 $global-font-size: 100%;
@@ -111,14 +114,15 @@ $print-transparent-backgrounds: true;
 $global-radius:4.5px;   
 $body-background: $global-grey-color-1;
 $body-font-color: $global-grey-color-2;
+
  
 $foundation-palette: (
   primary: #1779ba,
   secondary: $white, 
-  success: #3adb76,
+  success:  $global-green-color-2,
   warning: #ffae00,
   alert: #cc4b37,
-);
+); 
 
 
 @include add-foundation-colors;
