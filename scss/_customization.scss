@@ -41,7 +41,29 @@ input::-webkit-input-placeholder {
 
 .support-label{
   float:right;
+  cursor:pointer;
 }
+
+.input-container{
+    position:relative;
+    padding:0 0 0 20px;
+    margin:0 20px; 
+
+  
+
+    i,.icon{
+    position: relative;
+    bottom: -15.5px;
+    right: 0px;
+    width: 24px;
+    height: 24px;
+    float: right;
+    z-index: 10;
+    }
+
+
+}
+
 .popup-screen{ 
     background: transparent;
     padding: 30px; 
