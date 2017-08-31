@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Modal - Add or Modify exist student </title>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.css'>
+ 
+
+  <link rel="stylesheet" href="css/general_foundicons.css"> 
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" />
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <!-- start background block -->
+    <div class="large-12 medium-12 small-12 columns">
+        <div class="row">
+            <div class="large-1 medium-1 small-1 columns"></div>
+            <div class="large-10 medium-10 small-10 columns">
+            </div>
+            <div class="large-1 medium-1 small-1  columns"></div>
+        </div>
+    </div>
+    <!-- end background block -->
+    <!--  start modal -->
+    <div class="small reveal popup-screen" id="modal-video" data-reveal data-reset-on-close="true" data-animation-in="fade-in" data-animation-out="fade-out">
+        <div class="main">
+            <!-- start header -->
+            <div class="header">
+                <div class="row">
+                    <div class="large-1 medium-1 small-1 columns"></div>
+                    <div class="large-10 medium-10 small-10 columns">
+                        <h3>Add  Profile </h3>
+                    </div>
+                    <div class="large-1 medium-1 small-1 columns">
+                        <!-- start close button -->
+                        <button class="button-close  text-right right " data-close aria-label="Close reveal" type="button">
+                            <h4 aria-hidden="true">&times;</h4>
+                        </button>
+                        <!-- end close button -->
+                    </div>
+                </div>
+            </div>
+            <!-- end header -->
+            <!-- start content -->
+            <div class="body">
+                <!-- start question -->
+                <div class="row">
+                    <div class="large-2 medium-2 small-2 columns"></div>
+                    <div class="large-8 medium-8 small-8 columns">
+                
+                        <h3 class="title-text text-center"> Add or create an account for your kid </h3>
+                    </div>
+                    <div class="large-2 medium-2 small-2  columns">
+                    
+                    </div>
+                </div>
+                <!-- end question --> 
+                <!-- start break -->
+                <div class="row  ">
+                    <div class="large-12 medium-12 small-12 columns">
+                        <p class="text-center"> <br  </p>
+                    </div>
+                </div>
+                <!-- end break -->
+                <!-- start options -->
+                <div class="row  "> 
+                    <div class="large-12 medium-12 small-12 columns"> 
+                     <button type="button" class="button expanded large"> Existing</button>
+                    </div>
+                </div>
+                <!-- end options -->
+
+                <!-- start break -->
+                <div class="row  ">
+                    <div class="large-12 medium-12 small-12 columns">
+                        <p class="text-center"> <br> Or <br><br>
+                             </p>
+                    </div>
+                </div>
+                <!-- end break -->
+                <!-- start options -->
+                <div class="row  "> 
+                    <div class="large-12 medium-12 small-12 columns"> 
+                     <button type="button" class="button expanded large"> New</button>
+                    </div>
+                </div>
+                <!-- end options -->
+                <!-- start break -->
+                <div class="row  ">
+                    <div class="large-12 medium-12 small-12 columns">
+                        <p>
+                            <br> </p>
+                    </div>
+                </div>
+                <!-- end break -->
+            </div>
+            <!-- end content -->
+        </div>
+    </div>
+    <!-- end modal -->
+    <div id="btnModal" style="display:none; " class="hidden button large success" data-toggle="modal-video">Open Modal</div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.reveal.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.js'></script>
+ 
+    <script>
+
+ 
+    $(document).foundation();
+    $('#btnModal').click();
+    </script>
+</body>
+
+</html>

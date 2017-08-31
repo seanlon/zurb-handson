@@ -1,4 +1,14 @@
 /*override any custom classes here*/
+
+.can-click{
+  cursor: pointer;
+  &>*:hover,&:hover{
+    opacity:0.75;
+  }
+
+}
+
+
 .button.secondary {
   color: $global-grey-color-2;
   border: 1px solid #d6d6d6;
@@ -41,7 +51,7 @@ input::-webkit-input-placeholder {
 
 .support-label{
   float:right;
-  cursor:pointer;
+   @extend .can-click;
 }
 
 .input-container{
@@ -121,4 +131,74 @@ input::-webkit-input-placeholder {
          }
       }
    } 
+}
+
+.card{
+  &.list-items{
+    padding:2px;
+    min-height:330px;
+    background:#f7f7f7;
+
+    h1{
+      font-weight: bold; 
+      margin-bottom :0px;
+    }
+    p{
+      color:#cfcfcf;
+      font-weight:500;
+    }
+    .icon,i{
+      color: #d9d9d9;  
+      font-weight:bolder;
+      font-size:15px;
+
+       @extend .can-click;
+    }
+
+  }
+  
+}
+.center-middle-wrap{
+      position: relative;
+    background: white;
+ 
+    margin: 0 auto;
+    padding: 20px;
+    resize: both;
+    overflow: auto;
+    div{  
+      width: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      padding: 20px;
+      resize: both; 
+ 
+    
+    }
+     .circular-button{
+            min-height: 125px; 
+            padding:0px;
+            border-radius: 50%; 
+            display: inline-block; 
+            background:#f0f0f0 ;
+            text-align: center;
+            color:#b0b0b0;
+
+            span{
+              position: absolute;
+              top:45%;
+              right: 45% 
+            }
+
+      }
+      .circular-text{ 
+        text-align: center;
+        font-size:  95px;
+        font-weight: normal; 
+
+      }
+
 }
